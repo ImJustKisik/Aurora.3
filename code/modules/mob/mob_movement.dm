@@ -359,6 +359,9 @@
 			step(mob, pick(cardinal))
 		else
 			. = mob.SelfMove(n, direct)
+			if(.)
+				next_move_dir_add = 0
+				next_move_dir_sub = 0
 
 		for (var/obj/item/grab/G in list(mob:l_hand, mob:r_hand))
 			if (G.state == GRAB_NECK)

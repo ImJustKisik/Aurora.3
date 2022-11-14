@@ -61,6 +61,7 @@ mob/var/obj/effect/decal/typing_indicator
 	if(message)
 		me_verb(message)
 
+
 /client/verb/typing_indicator()
 	set name = "Show/Hide Typing Indicator"
 	set category = "Preferences"

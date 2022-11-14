@@ -25,7 +25,7 @@
 
 	var/can_hold_mob = FALSE
 	var/list/contained_mobs
-	appearance_flags = DEFAULT_APPEARANCE_FLAGS | TILE_BOUND
+	appearance_flags = DEFAULT_APPEARANCE_FLAGS | TILE_BOUND | LONG_GLIDE
 
 // We don't really need this, and apparently defining it slows down GC.
 /*/atom/movable/Del()

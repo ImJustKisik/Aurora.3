@@ -2,6 +2,7 @@
 	var/list/learned_spells
 
 /mob/Life()
+	set waitfor = FALSE
 	..()
 	if(LAZYLEN(spell_masters))
 		for(var/obj/screen/movable/spell_master/spell_master in spell_masters)

@@ -1,3 +1,4 @@
+#define SS_INIT_INPUT			 27
 #define SS_INIT_PERSISTENT_CONFIG 26
 #define SS_INIT_MISC_FIRST  25
 #define SS_INIT_SEEDS       24	// Plant controller setup.
@@ -47,6 +48,7 @@
 #define SS_PRIORITY_PROJECTILES 5	// Projectile processing!
 
 // Normal
+#define SS_PRIORITY_INPUT		   1000
 #define SS_PRIORITY_TICKER     100	// Gameticker.
 //#define SS_PRIORITY_DEFAULT   50	// This is defined somewhere else.
 #define SS_PRIORITY_MOB         40	// Mob Life().

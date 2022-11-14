@@ -43,6 +43,9 @@
 	if (client.is_initialized)
 		LateLogin()
 
+	if(client && SSinput.initialized)
+		client.set_macros()
+
 /**
  * \brief A function to replace most uses of mob/Login with. 99% of the time, you
  * should implement an override of this function.

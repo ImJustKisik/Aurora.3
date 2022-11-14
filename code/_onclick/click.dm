@@ -96,6 +96,9 @@
 	if(modifiers["middle"])
 		MiddleClickOn(A)
 		return TRUE
+	if(modifiers["middle"] && modifiers["alt"])
+		AltMiddleClickOn(A)
+		return TRUE
 	if(modifiers["shift"])
 		ShiftClickOn(A)
 		return FALSE
@@ -237,10 +240,14 @@
 /*
 	Middle click
 */
-/mob/proc/MiddleClickOn(var/atom/A)
+/mob/proc/AltMiddleClickOn(var/atom/A)
 	if(A.handle_middle_mouse_click(src))
 		return
 	swap_hand()
+
+/mob/proc/MiddleClickOn(var/atom/A)
+	pointed(A)
+	return
 
 // In case of use break glass
 /*

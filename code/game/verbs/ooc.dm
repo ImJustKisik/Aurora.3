@@ -1,7 +1,11 @@
 
-/client/verb/ooc(msg as text)
+/client/verb/ooc(msg = "" as text)
 	set name = "OOC"
 	set category = "OOC"
+
+	if(!msg)
+		msg = input(src.mob, "", "ooc \"text\"") as text|null
+
 
 	if(say_disabled)	//This is here to try to identify lag problems
 		to_chat(usr, "<span class='warning'>Speech is currently admin-disabled.</span>")

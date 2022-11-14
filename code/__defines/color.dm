@@ -142,4 +142,7 @@
 #define BLOB_COLOR_RAV          "#d65f42"
 #define BLOB_COLOR_PULS         "#b5ff5b"
 
+#define COLOR_INPUT_DISABLED "#F0F0F0"
+#define COLOR_INPUT_ENABLED "#D3B5B5"
+
 #define RANDOM_RGB rgb(rand(0,255), rand(0,255), rand(0,255))

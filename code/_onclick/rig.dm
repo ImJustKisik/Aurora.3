@@ -29,7 +29,7 @@
 			to_chat(src, "Somehow you bugged the system. Setting your hardsuit mode to middle-click.")
 			hardsuit_click_mode = MIDDLE_CLICK
 
-/mob/living/MiddleClickOn(atom/A)
+/mob/living/AltMiddleClickOn(atom/A)
 	if(client && client.hardsuit_click_mode == MIDDLE_CLICK)
 		if(HardsuitClickOn(A))
 			return

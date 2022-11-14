@@ -87,3 +87,14 @@
 			M.show_message(rendered, 2)
 
 	say(message, speaking, whisper_text, whisper = TRUE)
+
+
+/mob/living/verb/whisper_wrapper()
+	set name = ".Whisper"
+	set hidden = 1
+
+	set_typing_indicator(1)
+	var/message = input(src, "", "whisper (text)") as text|null
+	set_typing_indicator(0)
+	if(message)
+		whisper(message)

@@ -1110,3 +1110,7 @@ var/global/known_proc = new /proc/get_type_ref_bytes
 	while (world.tick_usage > min(TICK_LIMIT_TO_RUN, CURRENT_TICKLIMIT))
 
 #undef DELTA_CALC
+
+
+/proc/REF(input)
+	return "\ref[input]"
